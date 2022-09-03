@@ -1,26 +1,17 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-// import Home from 'path/to/pages/Home';
+import HomePage from '../Pages/Home/HomePage';
+import Movies from '../Pages/Movies/Movies';
+import NavMenu from './NavMenu/NavMenu';
 import NotFound from '../Pages/NotFound/NotFound';
-
-import s from './app.module.css';
 
 export const App = () => {
   return (
     <div className="container">
-      <header>
-        <nav className={s.nav}>
-          <NavLink to="/" className={s.menuLink}>
-            Home
-          </NavLink>
-          <NavLink to="/movies" className={s.menuLink}>
-            Movies
-          </NavLink>
-        </nav>
-      </header>
-      <hr className={s.breakLine} />
+      <NavMenu />
       <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movies" element={<Movies />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
