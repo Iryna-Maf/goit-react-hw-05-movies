@@ -42,6 +42,7 @@ const HomePage = () => {
 
   return (
     <>
+      <h2>Trending today</h2>
       <ul className={s.list}>{renderMovies}</ul>
       <div className={s.thumb}>
         {page !== 1 && (

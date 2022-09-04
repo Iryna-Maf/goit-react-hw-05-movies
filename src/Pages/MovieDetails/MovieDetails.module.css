@@ -1,0 +1,26 @@
+.details {
+  display: flex;
+  margin-top: 20px;
+  border-bottom: 2px solid orangered;
+  padding-bottom: 20px;
+}
+
+.details_img {
+  width: 700px;
+}
+
+.list {
+  display: block;
+  border-bottom: 2px solid orangered;
+  padding-bottom: 20px;
+}
+
+.list_Link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.active {
+  color: red;
+}
